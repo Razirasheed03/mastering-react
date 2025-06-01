@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
 
 const App = () => {
-  const [msg,setMsg]=useState([])
-useEffect(()=>{
-fetch('https://jsonplaceholder.typicode.com/posts')
-.then(data=>data.json())
-.then(data=>setMsg(data))
-},[])
+  const [msg, setMsg] = useState([])
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(data => data.json())
+      .then(data => setMsg(data))
+  }, [])
   return (
-   <div>
-    <h2>{
- msg.map(post=>(
-  <ul>
-  <li>{post.title}</li>
-  </ul>
- ))
-      
+    <div>
+      <h2>{
+        msg.map(post => (
+          <ul>
+            <li>{post.title}</li>
+          </ul>
+        ))
+
       }</h2>
-   </div> 
+    </div>
   )
 }
 
