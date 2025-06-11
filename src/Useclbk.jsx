@@ -1,6 +1,6 @@
-const Child=React.memo(({msg})=>{
-  console.log('child rendered')
-  return <button onClick={msg}>+</button>
+const Child = React.memo(({ msg }) => {
+    console.log('child rendered')
+    return <button onClick={msg}>+</button>
 })
 
 const UseCLBK = () => {
