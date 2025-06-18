@@ -23,17 +23,3 @@
 
 
 // export default App
-import React from 'react'
-import Hoc from './Hoc'
-import AlertMount from './AlertMount'
-import LazyTry from './LazyTry'
-
-const App = () => {
-  return (
-    <div>
-      <LazyTry/>
-    </div>
-  )
-}
-
-export default App
