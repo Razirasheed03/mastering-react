@@ -1,30 +1,30 @@
 import React from 'react'
 
 
-const Hello=(CompFn)=>{
-    return function EnhancedFn(props){
-        return(
+const Hello = (CompFn) => {
+    return function EnhancedFn(props) {
+        return (
             <>
-            <h1>Hello</h1>
-            <CompFn {...props}/>
+                <h1>Hello</h1>
+                <CompFn {...props} />
             </>
         )
     }
 }
 
-const Welcome=()=>{
+const Welcome = () => {
     return <h2>Welcome</h2>
 }
 
 
-const HelloWelcome=Hello(Welcome)
+const HelloWelcome = Hello(Welcome)
 
 const Hoc = () => {
-  return (
-    <div>
-        <HelloWelcome/>
-    </div>
-  )
+    return (
+        <div>
+            <HelloWelcome />
+        </div>
+    )
 }
 
 export default Hoc
