@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const App = () => {
+const Datafetch = () => {
   const [msg, setMsg] = useState([])
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -20,3 +20,5 @@ const App = () => {
     </div>
   )
 }
+
+export default Datafetch
