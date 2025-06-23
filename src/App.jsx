@@ -4,7 +4,7 @@ import Datafetch from './DataFetch'
 const App = () => {
   return (
     <div>
-      <Datafetch/>
+  
        </div>
   )
 }
