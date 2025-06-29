@@ -1,0 +1,1 @@
+A repository specialized for learning react from the scratch for beginners.
