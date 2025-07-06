@@ -2,7 +2,7 @@ import React from 'react'
 
 const Late = () => {
   return (
-    <div>I will come late</div>
+    <div>These component will Load Later </div>
   )
 }
 

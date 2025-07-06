@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Childs = () => {
     useEffect(() => {
         return () => {
-            alert('ill unmount')
+            alert('Component that will unmount when Clicks confirmation')
         }
     }, [])
     return <h2>Im the child</h2>
